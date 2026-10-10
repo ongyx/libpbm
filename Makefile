@@ -14,4 +14,5 @@ clean:
 	rm -f $(OBJECTS) $(TARGET)
 
 $(TARGET): $(OBJECTS)
+	mkdir -p ./build/
 	$(CC) $(CFLAGS) -o $(TARGET) $(OBJECTS) $(LDFLAGS)

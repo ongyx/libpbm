@@ -32,7 +32,9 @@ int main(void)
 		}
 	}
 
-	pbm_write_ascii(pbm, stdout);
+	pbm_write_binary(pbm, stdout);
+	pbm_free(pbm);
+	pbm = NULL;
 
 	return 0;
 }
