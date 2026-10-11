@@ -222,4 +222,5 @@ void pbm_free(PBM pbm)
 {
 	free(pbm->pixels);
 	pbm->pixels = NULL;
+	free(pbm);
 }
